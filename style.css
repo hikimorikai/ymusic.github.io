@@ -20,6 +20,14 @@ body
 	margin-left: 1140px;
 }
 
+#contact
+{
+	color: #00F2FA;
+	text-align: center;
+	background-color: #6F18FF;
+	border-radius: 15px
+
+}
 
 #myUL
 {
