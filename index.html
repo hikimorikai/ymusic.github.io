@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="music.ico">
+    <title>Ymusic</title>
+</head>
+<body>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Musci">
+
+<table id="myUL" border="0">
+  <tr>
+        <th><h3>Серега пират-тп на аме</h3><audio controls src="https://mp3uk.net/mp3/files/serega-pirat-tp-na-ame-mp3.mp3"></audio></th>
+        <th><h3>Twinky-Terrorblade</h3><audio controls src="https://eemusic.ru/mp3/0/NDc0NDk5MjE1XzQ1NjczNjgzOV8zNTZjNGQ0NTg0NWIzYzQ4MzNfMGNmZTA2Y2U4NGViOTJiODIwLzwhfCE-WyJncyIsNjksIlR3aW5reSIsMSxudWxsLDAsNDksMF0=/Twinky+-+Terrorblade_(EEMUSIC.ru).mp3"></audio></th>
+        <th><h3>Twinky-WaveForm</h3><audio controls src="https://eemusic.ru/mp3/0/NDc0NDk5MTQ2XzQ1NjczODI0MF8yNGNlNzM5NzZjOWRkMjI1ZDBfNTgyN2MyNTczN2JiMzAzMmRjLzwhfCE-WyJncyIsNzYsIlR3aW5reSIsMSxudWxsLDAsNDksMF0=/Twinky+-+Waveform_(EEMUSIC.ru).mp3"></audio></th>
+        <th><h3>Twinky-Alone</h3><audio controls src="https://eemusic.ru/mp3/0/NDc0NDk5MTg0XzQ1NjYxMDUxMF9lMGMzMTNmYmMyNDM1Zjc4YWFfMTQxNTQzN2U5N2QxNzU0NTc3LzwhfCE-WyJncyIsMywiVHdpbmt5IiwxLG51bGwsMCw0OSwwXQ==/Twinky+-+Alone_(EEMUSIC.ru).mp3"></audio></th>
+ </tr>
+
+
+  <tr>    
+        <th><h3>Twinky-Let me die</h3><audio controls src="https://eemusic.ru/mp3/0/NDc0NDk5MTY2XzQ1NjczNjM1NV82ZTljM2Q0NjE4Y2IxZmU2NWZfODFhMjUwNTk1MGQ1NDM3ZDMwLzwhfCE-WyJncyIsNzAsIlR3aW5reSIsMSxudWxsLDAsNDksMF0=/Twinky+-+Let+Me+Die_(EEMUSIC.ru).mp3"></audio></th>
+        <th><h3>Twinky-I love me</h3><audio controls src="https://eemusic.ru/mp3/0/NDc0NDk5MTc4XzQ1NjQzMjM5N185MzNlMGEwNTgxMmUyYzQ2ODZfZDI0MmMzZmZjOTAyOGRmOGVlLzwhfCE-WyJncyIsMTQsIlR3aW5reSIsMSxudWxsLDAsNDksMF0=/Twinky+-+I+Love+Me_(EEMUSIC.ru).mp3"></audio></th>
+        <th><h3>Twinky-Трон</h3><audio controls src="https://eemusic.ru/mp3/0/NDc0NDk5Mjk3XzQ1NjczNzA0NV84NDQ5NjQxYTRmYTQxMjI4NzlfYzc0MDMxZjZiMDRmMDIxYjVhLzwhfCE-WyJncyIsNzcsIlR3aW5reSIsMSxudWxsLDAsNDksMF0=/Twinky+-+%D0%A2%D1%80%D0%BE%D0%BD_(EEMUSIC.ru).mp3"></audio></th>
+        <th><h3>Twinky-Беды с башкой</h3><audio controls src="https://eemusic.ru/mp3/0/NDc0NDk5MjMyXzQ1NjY3NDQwOF8yOGQzY2RjZmJmOWM4MGFjYTVfNzYzNDUxMTA1OTk0OGEzOTQ4LzwhfCE-WyJncyIsMiwiVHdpbmt5IiwxLG51bGwsMCw0OSwwXQ==/Twinky+-+%D0%91%D0%B5%D0%B4%D1%8B+%D1%81+%D0%B1%D0%B0%D1%88%D0%BA%D0%BE%D0%B9_(EEMUSIC.ru).mp3"></audio></th>
+ 
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, th, h3, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      th = ul.getElementsByTagName('th');
+    
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < th.length; i++) {
+        h3 = th[i].getElementsByTagName("h3")[0];
+        txtValue = h3.textContent || h3.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          th[i].style.display = "";
+        } else {
+          th[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+</body>
+</html>
