@@ -40,13 +40,6 @@
 
 
 
-
-
-
-
-
-
-
 </table>
 
 
@@ -56,16 +49,17 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
+<script type="text/javascript">
+  const aud = document.querySelectorAll('audio')
+  Array.from(aud).map(el => el.addEventListener('play', () => {
+    const played = document.querySelector('[data-play="true"]')
+    if(played && played !== el) {
+      played.pause()
+      played.removeAttribute('data-play')
+    }
+    el.dataset.play = 'true'
+  }))
+</script>
 
 
 
