@@ -8,6 +8,12 @@ body
 }
 
 
+audio
+{
+	border-color: #6F18FF;
+	color: #383838;
+}
+
 #myInput
 {
 	background-color: #383838;
@@ -17,7 +23,7 @@ body
 	padding: 10px;
 	text-align: center;
 	border-color: #6F18FF;
-	margin-left: 1140px;
+
 }
 
 #contact
