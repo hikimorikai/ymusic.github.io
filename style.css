@@ -58,7 +58,7 @@ img
   color: white;
   text-align: center;
   display: inline-block;
-  margin-left: 80px;
+  margin-left: 6%;
 }
 
 
@@ -120,7 +120,7 @@ img
 
 .container-audio
 {
- margin-top: 273px;
+ margin-top: 20%;
 }
 
 .container-audio .colum1 {
@@ -130,6 +130,7 @@ img
     margin: 0 32px 0 0;
     display: inline-block;
     position: relative;
+    justify-content: space-around
 
 }
 .container-audio .colum1:last-child {
